@@ -1,0 +1,9 @@
+app:
+  image: fwed/gally
+  ports:
+    - 8995:8100
+    - 35729:35729
+  volumes:
+    - /home/apps/workspace/docker/js/gally:/home/docker/gally
+  net: "host_easy"
+  tty: true
